@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+}
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0px; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #ff0000;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+.animated {
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+#container {
+  height: 100vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#myVideo {
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.theme {
+  height: 100vh;
+  background-color: black;
+  color: white;
+}
+.heading {
+  background-image: url(./bg.jpg);
+  height: 40vh;
+  display: flex;
+}
+.h1 {
+  padding: 20px;
+  display: flex;
+  width: 25vw;
+  display: flex;
+  align-items: flex-end;
+}
+.h2 {
+    font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75vw;
+  font-size: 4.5em;
+}
+.content {
+  padding: 200px;
+  text-align: justify;
+  height: 60vh;
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+}
