@@ -70,7 +70,7 @@ html {
   align-items: flex-end;
 }
 .h2 {
-    font-weight: bold;
+  font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -85,4 +85,128 @@ html {
   font-size: 20px;
   align-items: center;
   justify-content: center;
+}
+.topics-1 {
+  height: 45vh;
+  display: flex;
+  background-color: rgb(1, 13, 66);
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+    transform-origin: -10% -10% -1;
+  }
+  to {
+    transform: rotate(360deg);
+    transform-origin: -10% -10% -1;
+  }
+}
+.topic-img-1 {
+  display: flex;
+  width: 50vw;
+  height: 45vh;
+
+  align-items: center;
+  justify-content: center;
+  animation-name: spin;
+  animation-duration: 7000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.topic-title-1 {
+  font-weight: bold;
+  font-size: 7em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: white;
+}
+.topics-2 {
+  height: 45vh;
+  display: flex;
+  background-color: rgb(1, 64, 66);
+}
+.topic-img-2 > img {
+  height: 300px;
+  width: 300px;
+}
+@keyframes wiggle {
+  0% {
+    transform: translateX(-30px);
+  }
+  50% {
+    transform: translateX(30px);
+  }
+  100% {
+    transform: translateX(-30px);
+  }
+}
+.topic-img-2 {
+  display: flex;
+  width: 50vw;
+  height: 45vh;
+  animation: wiggle 4s linear infinite;
+  align-items: center;
+  justify-content: center;
+}
+.topic-title-2 {
+  font-weight: bold;
+  font-size: 7em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: white;
+}
+.topics-3 {
+  height: 45vh;
+  display: flex;
+  background-color: rgb(122, 70, 2);
+}
+.topic-img-3 > img {
+  height: 200px;
+  width: 600px;
+}
+@keyframes car {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(400%);
+  }
+}
+.topic-img-3 {
+  display: flex;
+  width: 50vw;
+  height: 45vh;
+  animation: car 4s linear infinite;
+  align-items: center;
+  justify-content: center;
+}
+.topic-title-3 {
+  font-weight: bold;
+  font-size: 7em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: white;
+}
+.topics-4 {
+  height: 45vh;
+  display: flex;
+  background-color: #ff0000;
+}
+.topic-title-4 {
+  font-weight: bold;
+  font-size: 7em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: white;
 }
