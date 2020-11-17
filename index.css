@@ -6,6 +6,7 @@
 html {
   overflow: scroll;
   overflow-x: hidden;
+  background-color: #161843;
 }
 ::-webkit-scrollbar {
   width: 0px; /* Remove scrollbar space */
@@ -196,42 +197,15 @@ html {
   width: 100%;
   color: white;
 }
-@-webkit-keyframes fadeinout2 {
-  0%,
-  100% {
-    opacity: 1;
+@keyframes swiggle1 {
+  0% {
+    transform: rotate(-3deg);
   }
   50% {
-    opacity: 0;
+    transform: rotate(3deg);
   }
-}
-
-@keyframes fadeinout2 {
-  0%,
   100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-}
-@-webkit-keyframes fadeinout3 {
-  0%,
-  100% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeinout3 {
-  0%,
-  100% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
+    transform: rotate(-3deg);
   }
 }
 .topics-4 {
@@ -246,34 +220,15 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 70%;
   color: white;
-}
-.topic-img1-4 {
-  height: 45vh;
-  width: 10vw;
-  transform: translateX(-60px);
-}
-.topic-img2-4 {
-  height: 30vh;
-  width: 35vw;
-  transform: translateX(-110px);
-  -webkit-animation: fadeinout2 5s infinite;
-  animation: fadeinout2 5s infinite;
 }
 .topic-img3-4 {
   height: 30vh;
   width: 35vw;
-  transform: translateX(110px);
-  -webkit-animation: fadeinout3 5s infinite;
-  animation: fadeinout3 5s infinite;
+  animation: swiggle1 3s linear infinite;
 }
-.topic-img4-4 {
-  height: 45vh;
-  width: 10vw;
-  transform: translateX(60px);
-}
-.box{
+.box {
   height: 45vh;
   position: relative;
   text-align: center;
@@ -284,7 +239,37 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
   font-weight: bold;
-  width:100%;
+  width: 100%;
   font-size: 7em;
   color: white;
+}
+.pdf-box {
+  display: flex;
+  height: 40vh;
+  background-color: #161843;
+  justify-content: space-around;
+  align-items: center;
+}
+.button {
+  height: 200px;
+  width: 200px;
+  fill: white;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: bold;
+  align-items: center;
+  transition-duration: 0.7s;
+  transition-timing-function: ease-in-out;
+}
+.button > a {
+  text-decoration: none;
+  color: white;
+}
+.button:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  transition-duration: 0.7s;
+  transition-timing-function: ease-in-out;
 }
