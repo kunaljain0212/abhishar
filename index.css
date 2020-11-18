@@ -8,6 +8,9 @@ html {
   overflow-x: hidden;
   background-color: #161843;
 }
+body{
+  background-color: #161843;
+}
 ::-webkit-scrollbar {
   width: 0px; /* Remove scrollbar space */
   background: transparent; /* Optional: just make scrollbar invisible */
@@ -79,7 +82,7 @@ html {
   font-size: 4.5em;
 }
 .content {
-  padding: 200px;
+  padding: 0px 200px;
   text-align: justify;
   height: 60vh;
   display: flex;
@@ -212,7 +215,8 @@ html {
   height: 45vh;
   display: flex;
   align-items: center;
-  background-color: #085b92;
+  background-image: url("./Stars.png");
+  justify-content: center;
 }
 .topic-title-4 {
   font-weight: bold;
@@ -226,6 +230,8 @@ html {
 .topic-img3-4 {
   height: 30vh;
   width: 35vw;
+  display: flex;
+  align-items: center;
   animation: swiggle1 3s linear infinite;
 }
 .box {
@@ -243,6 +249,7 @@ html {
   font-size: 7em;
   color: white;
 }
+
 .pdf-box {
   display: flex;
   height: 40vh;
@@ -263,13 +270,213 @@ html {
   transition-duration: 0.7s;
   transition-timing-function: ease-in-out;
 }
+
 .button > a {
   text-decoration: none;
   color: white;
 }
-.button:hover{
+.button:hover {
   cursor: pointer;
   transform: scale(1.1);
   transition-duration: 0.7s;
   transition-timing-function: ease-in-out;
+}
+
+@media only screen and (max-width: 600px)
+{
+  #container {
+    height: 30vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .theme {
+    height: auto;
+    background-color: black;
+    color: white;
+  }
+
+  .heading {
+    background-image: url(./bg.jpg);
+    height: 30vh;
+    display: flex;
+  }
+  .h2 {
+    padding: 10%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    font-size: 2.05em;
+    text-align: center;
+  }
+
+  .h1 {
+    width: 0;
+    display: none;
+  }
+
+  .content {
+    padding: 20px;
+    text-align: center;
+    height: auto;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .topics-1 {
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(1, 13, 66);
+  }
+
+  .topic-img-1 {
+    display: flex;
+    width: 50vw;
+    height: 20vh;
+    align-items: center;
+    justify-content: center;
+    animation-name: spin;
+    animation-duration: 7000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  .topic-title-1 {
+    font-weight: bold;
+    font-size: 7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+  }
+
+  .topics-2 {
+    height: 45vh;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(1, 64, 66);
+  }
+
+  .topic-img-2 {
+    display: flex;
+    width: 50vw;
+    height: 20vh;
+    animation: wiggle 4s linear infinite;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .topic-img-2 > img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .topics-3 {
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(122, 70, 2);
+  }
+
+  .topic-img-3 > img {
+    height: 100px;
+    width: 300px;
+  }
+
+  .topic-img-3 {
+    display: flex;
+    width: 50vw;
+    height: 20vh;
+    animation: car 4s linear infinite;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .topic-title-3 {
+    font-weight: bold;
+    font-size: 7em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+  }
+
+  .topics-4 {
+    height: 45vh;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    background-image: url("./Stars.png");
+    justify-content: center;
+  }
+
+  .topic-title-4 {
+    font-weight: bold;
+    font-size: 7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    color: white;
+  }
+
+  .topic-img3-4 {
+    height: 30vh;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: swiggle1 3s linear infinite;
+  }
+
+  .ending {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    width: 100%;
+    font-size: 7em;
+    text-align: center;
+    color: white;
+  }
+
+  .pdf-box {
+    display: flex;
+    height: 50vh;
+    flex-direction: column;
+    background-color: #161843;
+    margin-bottom: 20px;
+  }
+
+  .button {
+    height: 100px;
+    width: 100px;
+    fill: white;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+    transition-duration: 0.7s;
+    transition-timing-function: ease-in-out;
+  }
 }
