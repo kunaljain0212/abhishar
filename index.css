@@ -325,7 +325,8 @@ body{
     text-align: center;
     height: auto;
     display: flex;
-    font-size: 20px;
+    font-size: 1.2em;
+    line-height: 20px;
     align-items: center;
     justify-content: center;
   }
@@ -353,7 +354,7 @@ body{
 
   .topic-title-1 {
     font-weight: bold;
-    font-size: 7em;
+    font-size: 4em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -369,7 +370,15 @@ body{
     align-items: center;
     background-color: rgb(1, 64, 66);
   }
-
+  .topic-title-2 {
+    font-weight: bold;
+    font-size: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+  }
   .topic-img-2 {
     display: flex;
     width: 50vw;
@@ -417,7 +426,7 @@ body{
 
   .topic-title-3 {
     font-weight: bold;
-    font-size: 7em;
+    font-size: 4em;
     text-align: center;
     display: flex;
     align-items: center;
@@ -437,7 +446,7 @@ body{
 
   .topic-title-4 {
     font-weight: bold;
-    font-size: 7em;
+    font-size: 4em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -461,7 +470,7 @@ body{
     transform: translate(-50%, -50%);
     font-weight: bold;
     width: 100%;
-    font-size: 7em;
+    font-size: 4em;
     text-align: center;
     color: white;
   }
