@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/png" href="./favicon-32x32.png"/>
     <script src="./index.js"></script>
     <script>
+      var x = window.matchMedia("(max-width: 600px)")
       var video = document.createElement("video");
-      video.src = "./final_compilation_2.mp4";
+      if(x.matches){
+        video.src = ""; //lite
+      } else {
+      video.src = "./final_compilation_2.mp4"; //hi-res
+      }
       video.id = "myVideo";
       video.autoplay = true;
       video.muted = true;
@@ -17,9 +24,8 @@
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>test</title>
+    <title>Abhishar v10.0</title>
     <link rel="stylesheet" href="index.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <link
@@ -32,7 +38,7 @@
       <img
         class="animated fadeIn"
         style="width: 50%"
-        src="./ABHISHAR.png"
+        src="./images/ABHISHAR.png"
         alt="ABHISHAR v10.0"
       />
     </div>
@@ -42,7 +48,7 @@
           Unfolding The Sci-Fi Chronicles!
         </div>
         <div class="h1" data-aos="fade-up" data-aos-duration="1000">
-          <img src="./Baymax.png" style="width: 70%; height: 100%" alt="rnm" />
+          <img src="./images/Baymax.png" style="width: 70%; height: 100%" alt="rnm" />
         </div>
       </div>
       <div class="content" data-aos="fade-up" data-aos-duration="1000">
@@ -143,12 +149,12 @@
         ALIENS
       </div>
       <div class="topic-img-2" data-aos="fade-left" data-aos-duration="1000">
-        <img src="./Yoda.png" alt="" />
+        <img src="./images/Yoda.png" alt="" />
       </div>
     </div>
     <div class="topics-3">
       <div class="topic-img-3" data-aos="fade-right" data-aos-duration="1000">
-        <img src="./Time_Machine.png" alt="" />
+        <img src="./images/Time_Machine.png" alt="" />
       </div>
       <div class="topic-title-3" data-aos="fade-left" data-aos-duration="1000">
         TIME TRAVEL
@@ -159,11 +165,11 @@
         FUTURE
       </div>
       <div class="topic-img3-4" data-aos="fade-right" data-aos-duration="1000">
-        <img style="height: 70%; width: 60%;" src="./Millenium Falcon.png" alt="" />
+        <img style="height: 70%; width: 60%;" src="./images/Millenium Falcon.png" alt="" />
       </div>
     </div>
     <div class="box">
-      <img style="height: 100%; width: 100%" src="./background5.png" alt="" />
+      <img style="height: 100%; width: 100%" src="./images/background5.png" alt="" />
       <div class="ending">AND SO MUCH MORE!</div>
     </div>
     <div class="pdf-box">

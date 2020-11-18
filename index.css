@@ -62,7 +62,7 @@ body{
   color: white;
 }
 .heading {
-  background-image: url(./bg.jpg);
+  background-image: url(./images/bg.jpg);
   height: 40vh;
   display: flex;
 }
@@ -215,7 +215,7 @@ body{
   height: 45vh;
   display: flex;
   align-items: center;
-  background-image: url("./Stars.png");
+  background-image: url("./images/Stars.png");
   justify-content: center;
 }
 .topic-title-4 {
@@ -300,7 +300,7 @@ body{
   }
 
   .heading {
-    background-image: url(./bg.jpg);
+    background-image: url(./images/bg.jpg);
     height: 30vh;
     display: flex;
   }
@@ -422,7 +422,7 @@ body{
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    background-image: url("./Stars.png");
+    background-image: url("./images/Stars.png");
     justify-content: center;
   }
 
