@@ -10,7 +10,11 @@
       if(x.matches){
         video.src = "https://aasf.azureedge.net/aasf/Abhishar-v10-Phone.m4v"; //lite
       } else {
+<<<<<<< HEAD
       video.src = "https://aasf.azureedge.net/aasf/Abhishar-v10-Laptop.m4v"; //hi-res
+=======
+        video.src = "./final_compilation_2.mp4"; //hi-res
+>>>>>>> f4b1bb53552a35574d1037868c6920cf2a54990d
       }
       video.id = "myVideo";
       video.autoplay = true;
@@ -260,9 +264,24 @@
         <a href="./Abhishar_v10.0_Low_Res.pdf" download> Low Resolution </a>
       </div>
     </div>
-    <iframe style="width:100%;height:90vh" src="https://online.fliphtml5.com/lluuk/xtok/"  seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" ></iframe>
+    <div id="pdf-reader">
+    </div>
     <script>
       AOS.init();
+      var pdfReader = document.createElement("iframe");
+      pdfReader.style = "width:100%;height:90vh";
+      pdfReader.setAttribute("seamless", "seamless");
+      pdfReader.setAttribute("scrolling", "no");
+      pdfReader.setAttribute("frameborder", "0");
+      pdfReader.setAttribute("allowtransparency", "true");
+      pdfReader.setAttribute("allowfullscreen", "true");
+      var x = window.matchMedia("(max-width: 600px)");
+      if(x.matches){
+        pdfReader.src = "https://online.fliphtml5.com/cwbhw/kqcv/"; //lite
+      } else {
+        pdfReader.src = "https://online.fliphtml5.com/cwbhw/qwwc/"; //hi-res
+      }
+      document.getElementById("pdf-reader").appendChild(pdfReader);
     </script>
   </body>
 </html>
