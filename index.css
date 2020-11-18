@@ -403,7 +403,7 @@ body{
     }
     100% {
       opacity: 0;
-      transform: translateX(50%);
+      transform: translateX(75%);
     }
   }
   .topic-img-3 {
