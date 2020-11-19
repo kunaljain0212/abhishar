@@ -542,4 +542,7 @@ body{
     transition-duration: 0.7s;
     transition-timing-function: ease-in-out;
   }
+  .scroll-down {
+    display: none;
+  }
 }
